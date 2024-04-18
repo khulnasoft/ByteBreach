@@ -2,13 +2,13 @@
 
 <details>
 
-<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.khulnasoft.com/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
+<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.bytebreach.xyz/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
 
 * Do you work in a **cybersecurity company**? Do you want to see your **company advertised in ByteBreach**? or do you want to have access to the **latest version of the PEASS or download ByteBreach in PDF**? Check the [**SUBSCRIPTION PLANS**](https://github.com/sponsors/khulnasoft)!
 * Discover [**The PEASS Family**](https://opensea.io/collection/the-peass-family), our collection of exclusive [**NFTs**](https://opensea.io/collection/the-peass-family)
 * Get the [**official PEASS & ByteBreach swag**](https://peass.creator-spring.com)
-* **Join the** [**💬**](https://emojipedia.org/speech-balloon/) [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** me on **Twitter** 🐦[**@khulnasoftm**](https://twitter.com/bytebreach_live)**.**
-* **Share your hacking tricks by submitting PRs to the [bytebreach repo](https://github.com/khulnasoft/bytebreach) and [bytebreach-cloud repo](https://github.com/khulnasoft/bytebreach-cloud)**.
+* **Join the** [**💬**](https://emojipedia.org/speech-balloon/) [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** me on **Twitter** 🐦[**@khulnasoftm**](https://twitter.com/bytebreach\_live)**.**
+* **Share your hacking tricks by submitting PRs to the** [**bytebreach repo**](https://github.com/khulnasoft/bytebreach) **and** [**bytebreach-cloud repo**](https://github.com/khulnasoft/bytebreach-cloud).
 
 </details>
 
@@ -33,7 +33,7 @@ DOCX files referencing a remote template (File –Options –Add-ins –Manage: 
 Go to: _Insert --> Quick Parts --> Field_\
 _**Categories**: Links and References, **Filed names**: includePicture, and **Filename or URL**:_ http://\<ip>/whatever
 
-![](<../../.gitbook/assets/image (316).png>)
+![](<../../.gitbook/assets/image (152).png>)
 
 ### Macros Backdoor
 
@@ -177,12 +177,12 @@ Don't forget that you cannot only steal the hash or the authentication but also 
 
 <details>
 
-<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.khulnasoft.com/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
+<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.bytebreach.xyz/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
 
 * Do you work in a **cybersecurity company**? Do you want to see your **company advertised in ByteBreach**? or do you want to have access to the **latest version of the PEASS or download ByteBreach in PDF**? Check the [**SUBSCRIPTION PLANS**](https://github.com/sponsors/khulnasoft)!
 * Discover [**The PEASS Family**](https://opensea.io/collection/the-peass-family), our collection of exclusive [**NFTs**](https://opensea.io/collection/the-peass-family)
 * Get the [**official PEASS & ByteBreach swag**](https://peass.creator-spring.com)
-* **Join the** [**💬**](https://emojipedia.org/speech-balloon/) [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** me on **Twitter** 🐦[**@khulnasoftm**](https://twitter.com/bytebreach_live)**.**
-* **Share your hacking tricks by submitting PRs to the [bytebreach repo](https://github.com/khulnasoft/bytebreach) and [bytebreach-cloud repo](https://github.com/khulnasoft/bytebreach-cloud)**.
+* **Join the** [**💬**](https://emojipedia.org/speech-balloon/) [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** me on **Twitter** 🐦[**@khulnasoftm**](https://twitter.com/bytebreach\_live)**.**
+* **Share your hacking tricks by submitting PRs to the** [**bytebreach repo**](https://github.com/khulnasoft/bytebreach) **and** [**bytebreach-cloud repo**](https://github.com/khulnasoft/bytebreach-cloud).
 
 </details>

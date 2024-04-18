@@ -2,14 +2,14 @@
 
 <details>
 
-<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.khulnasoft.com/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
+<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.bytebreach.xyz/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
 
 Other ways to support ByteBreach:
 
 * If you want to see your **company advertised in ByteBreach** or **download ByteBreach in PDF** Check the [**SUBSCRIPTION PLANS**](https://github.com/sponsors/khulnasoft)!
 * Get the [**official PEASS & ByteBreach swag**](https://peass.creator-spring.com)
 * Discover [**The PEASS Family**](https://opensea.io/collection/the-peass-family), our collection of exclusive [**NFTs**](https://opensea.io/collection/the-peass-family)
-* **Join the** 💬 [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** us on **Twitter** 🐦 [**@khulnasoftm**](https://twitter.com/bytebreach_live)**.**
+* **Join the** 💬 [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** us on **Twitter** 🐦 [**@khulnasoftm**](https://twitter.com/bytebreach\_live)**.**
 * **Share your hacking tricks by submitting PRs to the** [**ByteBreach**](https://github.com/khulnasoft/bytebreach) and [**ByteBreach Cloud**](https://github.com/khulnasoft/bytebreach-cloud) github repos.
 
 </details>
@@ -30,7 +30,7 @@ These are the **values of the ByteBreach Project**:
   * The ByteBreach team has dedicated thousands of hours for free **only to organize the content** so people can **learn faster**
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/hack tricks gif.gif" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/byte breach gif.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 ## ByteBreach faq
 
@@ -71,7 +71,7 @@ If you need a bibtex you can use something like:
   author = {"ByteBreach Team" or the Authors name of the specific page/trick},
   title = {Title of the Specific Page},
   year = {Year of Last Update (check it at the end of the page)},
-  url = {\url{https://book.khulnasoft.com/specific-page}},
+  url = {\url{khulnasoft.github.io/bytebreach/specific-page}},
 }
 ```
 
@@ -105,17 +105,21 @@ You won't find ByteBreach filled with annoying ads like other blogs with much le
 * **What should I do if there is content from my blog in ByteBreach and I don't want it there?**
 {% endhint %}
 
-In any case know that ByteBreach in this case would be improving your **SEO** and **encouraging** people to **check your page** (people has mentioned us that since some page of them is in ByteBreach they receive more visits). If you still want the content of your blog to be removed from ByteBreach let us know.
+Note that having links to your page in ByteBreach:
 
-Note that asking this we will definitely **remove every link to your blog**, and any content based on it.
+* Improve your **SEO**
+* The content gets **translated to more than 15 languages** making possible for more people to access this content
+* **ByteBreach encourages** people to **check your page** (several people has mentioned us that since some page of them is in ByteBreach they receive more visits)
+
+However, If you still want the content of your blog to be removed from ByteBreach just let us know and we will definitely **remove every link to your blog**, and any content based on it.
 
 {% hint style="danger" %}
 * **What should I do if I find copy-pasted content in ByteBreach?**
 {% endhint %}
 
-**Unfortunatelly this practice might have happened in the beginning of the project when this page was just the notes of a pentester**. We always try to **give the original authors all the credits**. If you find a page with copy-pasted content (even with the original source referenced), let us know and we will either **remove it**, **leave the link**, or **rewrite it**.
+We always **give the original authors all the credits**. If you find a page with copy-pasted content without original source referenced, let us know and we will either **remove it**, **add the link before the text**, or **rewrite it adding the link**.
 
-## LICENSE&#x20;
+## LICENSE
 
 Copyright © All rights reserved unless otherwise specified.
 
@@ -154,14 +158,14 @@ By using this book, the user agrees to release the authors and publishers from a
 
 <details>
 
-<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.khulnasoft.com/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
+<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.bytebreach.xyz/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
 
 Other ways to support ByteBreach:
 
 * If you want to see your **company advertised in ByteBreach** or **download ByteBreach in PDF** Check the [**SUBSCRIPTION PLANS**](https://github.com/sponsors/khulnasoft)!
 * Get the [**official PEASS & ByteBreach swag**](https://peass.creator-spring.com)
 * Discover [**The PEASS Family**](https://opensea.io/collection/the-peass-family), our collection of exclusive [**NFTs**](https://opensea.io/collection/the-peass-family)
-* **Join the** 💬 [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** us on **Twitter** 🐦 [**@khulnasoftm**](https://twitter.com/bytebreach_live)**.**
+* **Join the** 💬 [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** us on **Twitter** 🐦 [**@khulnasoftm**](https://twitter.com/bytebreach\_live)**.**
 * **Share your hacking tricks by submitting PRs to the** [**ByteBreach**](https://github.com/khulnasoft/bytebreach) and [**ByteBreach Cloud**](https://github.com/khulnasoft/bytebreach-cloud) github repos.
 
 </details>
