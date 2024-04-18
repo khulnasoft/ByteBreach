@@ -2,7 +2,7 @@
 
 <details>
 
-<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.khulnasoft.com/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
+<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.bytebreach.xyz/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
 
 * Do you work in a **cybersecurity company**? Do you want to see your **company advertised in ByteBreach**? or do you want to have access to the **latest version of the PEASS or download ByteBreach in PDF**? Check the [**SUBSCRIPTION PLANS**](https://github.com/sponsors/khulnasoft)!
 * Discover [**The PEASS Family**](https://opensea.io/collection/the-peass-family), our collection of exclusive [**NFTs**](https://opensea.io/collection/the-peass-family)
@@ -11,6 +11,11 @@
 * **Share your hacking tricks by submitting PRs to the [bytebreach repo](https://github.com/khulnasoft/bytebreach) and [bytebreach-cloud repo](https://github.com/khulnasoft/bytebreach-cloud)**.
 
 </details>
+
+<figure><img src="/.gitbook/assets/WebSec_1500x400_10fps_21sn_lightoptimized_v2.gif" alt=""><figcaption></figcaption></figure>
+
+{% embed url="https://websec.nl/" %}
+
 
 ## Overpass The Hash/Pass The Key (PTK)
 
@@ -49,9 +54,13 @@ To conform to operational security and use AES256, the following command can be 
 
 * [https://www.tarlogic.com/es/blog/como-atacar-kerberos/](https://www.tarlogic.com/es/blog/como-atacar-kerberos/)
 
+<figure><img src="/.gitbook/assets/WebSec_1500x400_10fps_21sn_lightoptimized_v2.gif" alt=""><figcaption></figcaption></figure>
+
+{% embed url="https://websec.nl/" %}
+
 <details>
 
-<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.khulnasoft.com/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
+<summary><strong>Learn AWS hacking from zero to hero with</strong> <a href="https://training.bytebreach.xyz/courses/arte"><strong>htARTE (ByteBreach AWS Red Team Expert)</strong></a><strong>!</strong></summary>
 
 * Do you work in a **cybersecurity company**? Do you want to see your **company advertised in ByteBreach**? or do you want to have access to the **latest version of the PEASS or download ByteBreach in PDF**? Check the [**SUBSCRIPTION PLANS**](https://github.com/sponsors/khulnasoft)!
 * Discover [**The PEASS Family**](https://opensea.io/collection/the-peass-family), our collection of exclusive [**NFTs**](https://opensea.io/collection/the-peass-family)

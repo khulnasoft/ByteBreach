@@ -6,10 +6,10 @@ Last updated: 02/04/2023
 
 This Cookies Policy applies to the following websites owned and operated by ByteBreach team ("ByteBreach", "we", "us" or "our"):
 
-* khulnasoft.com
-* [www.khulnasoft.com](http://www.khulnasoft.com/)
-* book.khulnasoft.com
-* cloud.khulnasoft.com
+* bytebreach.xyz
+* [www.bytebreach.xyz](http://www.bytebreach.xyz/)
+* book.bytebreach.xyz
+* cloud.bytebreach.xyz
 
 By using any of these websites, you agree to the use of cookies in accordance with this Cookies Policy. If you do not agree, please disable cookies in your browser settings or refrain from using our websites.
 
@@ -26,7 +26,7 @@ We use cookies on our websites for the following purposes:
 3. Functionality cookies: These cookies enable our websites to remember choices you make, such as your language or region, to provide a more personalized experience.
 4. Targeting/advertising cookies: These cookies are used to deliver relevant ads and marketing communications based on your interests, browsing history, and interactions with our websites.
 
-Moreover, the pages book.khulnasoft.com and cloud.khulnasoft.com are hosted in Gitbook. You can find more information about Gitbooks cookies in [https://gitbook-1652864889.teamtailor.com/cookie-policy](https://gitbook-1652864889.teamtailor.com/cookie-policy).
+Moreover, the pages book.bytebreach.xyz and cloud.bytebreach.xyz are hosted in Gitbook. You can find more information about Gitbooks cookies in [https://gitbook-1652864889.teamtailor.com/cookie-policy](https://gitbook-1652864889.teamtailor.com/cookie-policy).
 
 ### Third-party cookies
 
@@ -42,4 +42,4 @@ We may update this Cookies Policy from time to time to reflect changes in our pr
 
 ### Contact us
 
-If you have any questions or concerns about this Cookies Policy, please contact us at [support@khulnasoft.com](mailto:support@khulnasoft.com)
+If you have any questions or concerns about this Cookies Policy, please contact us at [support@bytebreach.xyz](mailto:support@bytebreach.xyz)
