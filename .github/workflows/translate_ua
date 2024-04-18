@@ -42,7 +42,7 @@ jobs:
           sudo apt-get install wget -y
           mkdir scripts
           cd scripts
-          wget https://raw.githubusercontent.com/khulnasoft/bytebreach-cloud/master/scripts/translator.py
+          wget https://raw.githubusercontent.com/carlospolop/hacktricks-cloud/master/scripts/translator.py
           cd ..
 
       - name: Download language branch #Make sure we have last version
