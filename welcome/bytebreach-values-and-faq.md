@@ -30,7 +30,7 @@ These are the **values of the ByteBreach Project**:
   * The ByteBreach team has dedicated thousands of hours for free **only to organize the content** so people can **learn faster**
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/hack tricks gif.gif" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/byte breach gif.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 ## ByteBreach faq
 
